@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div class="navbar bg-base-100 shadow-sm">
     <div class="navbar-start">
@@ -9,6 +6,7 @@
       </NuxtLink>
     </div>
     <div class="navbar-end">
+      <AppThemeToggle />
       <button class="btn">
         Sign In with GitHub
         <Icon name="tabler:brand-github" size="24" />
