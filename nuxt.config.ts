@@ -6,7 +6,11 @@ export default defineNuxtConfig({
   devServer: {
     port: 3001,
   },
-  modules: ["@nuxt/eslint", "@nuxt/icon"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/icon",
+    "@nuxtjs/color-mode",
+  ],
   eslint: {
     config: {
       standalone: false,
@@ -17,5 +21,8 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+  },
+  colorMode: {
+    dataValue: "theme",
   },
 });
