@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AuthButton from "~/components/auth-button.vue";
+</script>
+
 <template>
   <div class="hero bg-base-200 container mx-auto mt-4">
     <div class="hero-content text-center min-h-96">
@@ -10,10 +14,7 @@
           Add locations, photo and notes to your travel log.
           Sign in with your GitHub account to get started.
         </p>
-        <button class="btn btn-primary">
-          Sign In with GitHub
-          <Icon name="tabler:brand-github" size="24" />
-        </button>
+        <AuthButton />
       </div>
     </div>
   </div>
